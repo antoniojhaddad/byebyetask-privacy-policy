@@ -13,104 +13,285 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
             background-color: white;
-            min-height: 100vh;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
         }
         
-        h1 {
-            color: #2c3e50;
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 60px 40px;
+            text-align: center;
+            color: white;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
             margin-bottom: 10px;
-            font-size: 2em;
+            font-weight: 700;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 50px 40px;
         }
         
         .last-updated {
-            color: #7f8c8d;
-            font-style: italic;
-            margin-bottom: 30px;
-            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 500;
         }
         
         h2 {
-            color: #34495e;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h2:first-of-type {
+            margin-top: 0;
         }
         
         p {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-align: justify;
+            font-size: 1.05em;
+            line-height: 1.8;
         }
         
         ul {
             margin-left: 30px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         
         li {
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            font-size: 1.05em;
         }
         
-        a {
-            color: #3498db;
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .contact-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        .contact-box a {
+            color: white;
             text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
         }
         
-        a:hover {
-            text-decoration: underline;
+        .contact-box a:hover {
+            opacity: 0.8;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.95em;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+            
+            .container {
+                border-radius: 0;
+            }
+            
+            .header {
+                padding: 40px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Política de Privacidade - ByeByeTask</h1>
-        <span class="last-updated">Última atualização: 04 de dezembro de 2025</span>
+        <div class="header">
+            <img src="https://i.ibb.co/0jLPPdrv/Captura-de-Tela-2025-11-16-a-s-17-07-13-removebg-preview.png" alt="ByeByeTask Logo" class="logo">
+            <h1>Política de Privacidade</h1>
+            <p class="subtitle">ByeByeTask - Gerenciador de Tarefas</p>
+        </div>
         
-        <h2>1. Introdução</h2>
-        <p>Esta Política de Privacidade descreve como o aplicativo ByeByeTask ("nós", "nosso" ou "aplicativo") coleta, usa e protege suas informações quando você utiliza nosso serviço.</p>
+        <div class="content">
+            <div class="last-updated">
+                📅 Última atualização: 04 de dezembro de 2025
+            </div>
+            
+            <p>A <strong>ByeByeTask</strong> respeita sua privacidade e está comprometida em proteger seus dados pessoais. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos suas informações ao utilizar nosso aplicativo de gerenciamento de tarefas.</p>
+            
+            <h2>1. Informações que Coletamos</h2>
+            <p>O ByeByeTask é um aplicativo gratuito de gerenciamento de tarefas que coleta e armazena localmente as seguintes informações:</p>
+            <ul>
+                <li><strong>Tarefas criadas:</strong> Título, descrição, data de vencimento, status e prioridade das suas tarefas</li>
+                <li><strong>Configurações do aplicativo:</strong> Preferências de notificações, tema e idioma</li>
+                <li><strong>Dados de uso:</strong> Informações sobre como você utiliza o aplicativo para melhorar a experiência</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <p><strong>⚠️ Importante:</strong> Todos os dados são armazenados localmente no seu dispositivo. Não coletamos, transmitimos ou armazenamos suas informações pessoais em servidores externos.</p>
+            </div>
+            
+            <h2>2. Como Usamos suas Informações</h2>
+            <p>Utilizamos suas informações exclusivamente para:</p>
+            <ul>
+                <li>Fornecer as funcionalidades de gerenciamento de tarefas</li>
+                <li>Personalizar sua experiência no aplicativo</li>
+                <li>Enviar notificações sobre suas tarefas (quando autorizadas)</li>
+                <li>Melhorar e otimizar o desempenho do aplicativo</li>
+                <li>Manter suas preferências e configurações</li>
+            </ul>
+            
+            <h2>3. Controle de Notificações</h2>
+            <div class="highlight-box">
+                <p><strong>🔔 Controle Total:</strong> Você tem controle total sobre as notificações recebidas. O ByeByeTask permite que você ative ou desative notificações a qualquer momento através das configurações do aplicativo ou das configurações do seu dispositivo.</p>
+            </div>
+            <p>As notificações são usadas exclusivamente para lembrá-lo sobre suas tarefas e compromissos. Você pode personalizar quando e como deseja ser notificado.</p>
+            
+            <h2>4. Armazenamento e Segurança dos Dados</h2>
+            <p>Implementamos medidas de segurança para proteger seus dados:</p>
+            <ul>
+                <li>Todos os dados são armazenados localmente no seu dispositivo</li>
+                <li>Não compartilhamos seus dados com terceiros</li>
+                <li>Não vendemos ou alugamos suas informações pessoais</li>
+                <li>Utilizamos criptografia para proteger informações sensíveis</li>
+            </ul>
+            
+            <h2>5. Exclusão de Dados</h2>
+            <div class="highlight-box">
+                <p><strong>🗑️ Controle Total:</strong> Você tem controle completo sobre seus dados. O ByeByeTask oferece a opção de exclusão manual de todos os dados do usuário diretamente no aplicativo.</p>
+            </div>
+            <p><strong>Importante:</strong> Uma vez excluídos, seus dados não podem ser recuperados. A exclusão é permanente e irreversível.</p>
+            
+            <h2>6. Compartilhamento de Dados</h2>
+            <p>O ByeByeTask <strong>NÃO</strong> compartilha, vende, aluga ou divulga suas informações pessoais para terceiros em nenhuma circunstância, exceto quando:</p>
+            <ul>
+                <li>Exigido por lei ou ordem judicial</li>
+                <li>Necessário para proteger nossos direitos legais</li>
+                <li>Com seu consentimento explícito</li>
+            </ul>
+            
+            <h2>7. Direitos do Usuário (LGPD)</h2>
+            <p>Em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018), você tem os seguintes direitos:</p>
+            <ul>
+                <li><strong>Confirmação e acesso:</strong> Confirmar a existência de tratamento e acessar seus dados</li>
+                <li><strong>Correção:</strong> Solicitar a correção de dados incompletos, inexatos ou desatualizados</li>
+                <li><strong>Anonimização, bloqueio ou eliminação:</strong> Solicitar a exclusão de dados desnecessários ou tratados em desconformidade com a LGPD</li>
+                <li><strong>Portabilidade:</strong> Solicitar a portabilidade de seus dados a outro fornecedor</li>
+                <li><strong>Informação sobre compartilhamento:</strong> Saber com quais entidades públicas e privadas seus dados são compartilhados</li>
+                <li><strong>Revogação do consentimento:</strong> Revogar o consentimento a qualquer momento</li>
+            </ul>
+            
+            <h2>8. Cookies e Tecnologias Similares</h2>
+            <p>O ByeByeTask não utiliza cookies ou tecnologias de rastreamento, pois todos os dados são armazenados localmente no dispositivo.</p>
+            
+            <h2>9. Privacidade de Crianças e Adolescentes</h2>
+            <p>O ByeByeTask é um aplicativo direcionado para todas as idades, incluindo crianças, pois acreditamos que todos podem se beneficiar de um bom gerenciamento de tarefas.</p>
+            <p><strong>Proteção de Menores:</strong> Não coletamos informações pessoais identificáveis de usuários de qualquer idade. Todos os dados são armazenados localmente no dispositivo e não são transmitidos para servidores externos.</p>
+            <p>Para crianças menores de 13 anos, recomendamos o uso sob supervisão de pais ou responsáveis, especialmente ao configurar notificações e permissões do dispositivo.</p>
+            
+            <h2>10. Alterações nesta Política</h2>
+            <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas ou por outros motivos operacionais, legais ou regulatórios. Notificaremos você sobre quaisquer alterações significativas através de:</p>
+            <ul>
+                <li>Notificação no aplicativo</li>
+                <li>Atualização da data no topo desta página</li>
+            </ul>
+            <p>Recomendamos que você revise esta política regularmente para se manter informado sobre como protegemos suas informações.</p>
+            
+            <h2>11. Base Legal para Tratamento de Dados</h2>
+            <p>O tratamento de seus dados pessoais é realizado com base nas seguintes hipóteses legais previstas na LGPD:</p>
+            <ul>
+                <li><strong>Execução de contrato:</strong> Para fornecimento do serviço de gerenciamento de tarefas</li>
+                <li><strong>Legítimo interesse:</strong> Para melhorar e otimizar o aplicativo</li>
+                <li><strong>Consentimento:</strong> Para funcionalidades específicas que requerem autorização expressa</li>
+            </ul>
+            
+            <h2>12. Transferência Internacional de Dados</h2>
+            <p>O ByeByeTask não realiza transferência internacional de dados, pois todas as informações são armazenadas localmente no seu dispositivo.</p>
+            
+            <div class="contact-box">
+                <h3>📧 Entre em Contato</h3>
+                <p>Se você tiver dúvidas, preocupações ou solicitações relacionadas a esta Política de Privacidade ou ao tratamento de seus dados pessoais, entre em contato conosco:</p>
+                <p style="margin-top: 20px;">
+                    <a href="mailto:thamania8group@gmail.com">thamania8group@gmail.com</a>
+                </p>
+                <p style="margin-top: 15px; font-size: 0.95em; opacity: 0.9;">Responderemos sua solicitação em até 48 horas úteis.</p>
+            </div>
+        </div>
         
-        <h2>2. Informações que Coletamos</h2>
-        <p>O ByeByeTask coleta e armazena localmente no seu dispositivo:</p>
-        <ul>
-            <li>Tarefas criadas por você</li>
-            <li>Configurações de preferências do aplicativo</li>
-            <li>Dados de uso do aplicativo</li>
-        </ul>
-        
-        <h2>3. Como Usamos suas Informações</h2>
-        <p>Utilizamos suas informações exclusivamente para:</p>
-        <ul>
-            <li>Fornecer funcionalidades do aplicativo de gerenciamento de tarefas</li>
-            <li>Melhorar a experiência do usuário</li>
-            <li>Manter suas preferências e configurações</li>
-        </ul>
-        
-        <h2>4. Armazenamento de Dados</h2>
-        <p>Todos os dados são armazenados localmente no seu dispositivo. Não coletamos, transmitimos ou armazenamos suas informações pessoais em servidores externos.</p>
-        
-        <h2>5. Compartilhamento de Dados</h2>
-        <p>Não compartilhamos, vendemos ou alugamos suas informações pessoais para terceiros.</p>
-        
-        <h2>6. Segurança</h2>
-        <p>Implementamos medidas de segurança para proteger seus dados contra acesso não autorizado, alteração ou destruição.</p>
-        
-        <h2>7. Privacidade de Crianças</h2>
-        <p>O ByeByeTask não é direcionado a menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças.</p>
-        
-        <h2>8. Alterações nesta Política</h2>
-        <p>Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova política nesta página.</p>
-        
-        <h2>9. Contato</h2>
-        <p>Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco através do email: [seu-email@exemplo.com]</p>
+        <div class="footer">
+            <p><strong>ByeByeTask</strong> - Gerenciador de Tarefas</p>
+            <p>© 2025 ByeByeTask. Todos os direitos reservados.</p>
+            <p style="margin-top: 10px;">Esta política está em conformidade com a LGPD (Lei nº 13.709/2018)</p>
+        </div>
     </div>
 </body>
 </html>
